@@ -1,124 +1,877 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stephen Simon Dias - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>Stephen Simon Dias</h1>
-        <p>
-            <strong>Phone:</strong> 571-641-1575 | 
-            <strong>Email:</strong> <a href="mailto:stepdias1099@gmail.com">stepdias1099@gmail.com</a> | 
-            <strong>Location:</strong> Seattle, WA 98121, USA (Open to Relocate)
-        </p>
-    </header>
 
-    <section id="education">
-        <h2>Education</h2>
-        <div>
-            <h3>George Mason University</h3>
-            <p><strong>Aug 2022 - May 2024</strong></p>
-            <p>Master of Science, Computer Science</p>
-            <p><strong>CGPA:</strong> 3.80/4.00</p>
-            <p><strong>Key Courses:</strong> Secure Software Design, Data Mining, Information Security, Distributed Systems, Database Systems, Operating Systems Concepts</p>
-        </div>
-        <div>
-            <h3>Savitribai Phule Pune University</h3>
-            <p><strong>Jun 2017 - Jun 2021</strong></p>
-            <p>Bachelor of Engineering, Computer Engineering</p>
-            <p><strong>CGPA:</strong> 3.80/4.00</p>
-            <p><strong>Key Courses:</strong> Computer Architecture, Software Engineering and Design, Multithreaded Programming, Object-Oriented Programming, NLP, ML</p>
-        </div>
-    </section>
+  <!--
+    - #MAIN
+  -->
 
-    <section id="technical-skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> Java, C++, C, C#, JavaScript, Typescript, Python, Kotlin, SQL, Go, Bash, HTML/CSS, PHP</li>
-            <li><strong>Frameworks & Libraries:</strong> Spring Boot, Hibernate, React, NodeJS, Angular, .Net, Android Studio, AWS EC2 ELB S3, GCP</li>
-            <li><strong>Databases & OS:</strong> MySQL, MongoDB, PostgreSQL, Oracle, Firebase, Ubuntu, Windows, MacOS</li>
-            <li><strong>Tools & Other:</strong> Git, Docker, Kubernetes, Jenkins, Agile, Unit Testing, Scrum, Microservices, Data Structures & Algorithms</li>
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Stephen Dias" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Stephen Dias">Stephen Dias</h1>
+
+          <p class="title">Full Stack Software Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:stepdias1099@gmail.com" class="contact-link">stepdias1099@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+15716411575" class="contact-link">+1 (571) 641-1575</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1999-11-10">Nov 10, 1999</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sunnyvale, California, USA</address>
+            </div>
+
+          </li>
+
         </ul>
-    </section>
-    <section id="work-experience">
-        <h2>Work Experience</h2>
-    
-        <div>
-            <h3>Full Stack Java Developer</h3>
-            <p><strong>Pro-Tek IT</strong></p>
-            <p><strong>Aug 2024 - Present</strong></p>
-            <ul>
-                <li>Working on SiriusXM's SPPG backend using Java Spring Boot, Hibernate, React, and REST APIs enabling seamless data processing and integration with APIs, resulting in 30% faster playlist generation and enhancing user experience.</li>
-                <li>Streamlined algorithms for collaborative/content-based filtering, increasing user engagement by 25%, deployed using CI/CD pipelines utilizing Docker, AWS EC2, and ELB ensuring smooth integration and testing with JUnit and Mockito.</li>
-            </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/stephen-dias10/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/STEPHENDIAS10" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            As a passionate Java Full Stack Software Engineer, I specialize in developing robust, scalable, and high-performance applications using Java and cutting-edge JavaScript frameworks. 
+            My expertise spans Java frameworks such as Spring Boot, Hibernate, and Java EE, as well as front-end development using popular frameworks like React, Angular, and Vue.
+          </p>
+          <p>
+            I have a deep understanding of Object-Oriented Programming (OOP) and am proficient in developing both back-end and front-end solutions to build seamless, user-friendly experiences. 
+            I leverage modern technologies to create efficient solutions for complex challenges, ensuring that applications are both reliable and maintainable. 
+            My focus is on building end-to-end applications that are well-architected, highly optimized, and deliver high-quality user experiences.
+          </p>
+
+          <p>
+            Additionally, I bring hands-on experience with DevOps, leveraging AWS services such as EC2, S3, Lambda, and
+            RDS to enhance application deployment, scalability, and monitoring.
+            My ability to bridge the gap between front-end and back-end development,
+            coupled with a keen understanding of cloud infrastructure, enables me to deliver end-to-end solutions that
+            meet complex business requirements.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I Do</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/computer-software-system.svg" alt="design icon"
+                  width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend Development</h4>
+
+                <p class="service-item-text">
+                  Robust and scalable server-side solutions to power your applications effectively.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/application-coding-web-code-write-svgrepo-com.svg" alt="Web development icon"
+                  width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Cutting-edge and responsive user interfaces for an exceptional user experience.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile Apps Development</h4>
+
+                <p class="service-item-text">
+                  High-quality and user-friendly mobile applications tailored for iOS and Android platforms.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/dev-ops-solid-svgrepo-com.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">DevOps</h4>
+
+                <p class="service-item-text">
+                  Streamlined deployment pipelines and infrastructure automation for seamless application delivery.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Mohit Sharma" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Mohit Sharma ~Project Manager Harbinger
+                </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Working with Stephen was a game-changer for our project.
+                    Their expertise in both front-end and back-end development ensured our application was not only
+                    visually stunning but also functionally robust.
+                    They consistently delivered beyond our expectations and were a true team player.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller ~Operations Lead at
+                  CloudWorks</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    The DevOps practices implemented by Stephen significantly improved our deployment process.
+                    By leveraging AWS services, they reduced downtime and optimized performance across all our
+                    applications.
+                    Their proactive approach to problem-solving was invaluable.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans ~Senior Manager</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    What impressed me most about Stephen was their ability to foster collaboration within the team.
+                    They encouraged open communication and shared knowledge, resulting in a more cohesive and efficient
+                    development process.
+                    Their technical expertise and leadership skills were key to the project's success.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Jayesh Shah" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jayesh Shah ~Project Lead Team Seed </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    What sets Stephen apart is their ability to communicate complex technical concepts in simple
+                    terms.
+                    They built an exceptional web application for our business and provided us with the tools and
+                    knowledge to maintain it effectively.
+                    Their contributions were invaluable to our success.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2022</time>
+
+              <div data-modal-text>
+                <p>
+                  Despite being a new graduate, Stephen demonstrated strong technical skills and a deep understanding of
+                  software development principles.
+                  They successfully contributed to our project by implementing critical features and collaborating
+                  effectively with the team.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
         </div>
-    
-        <div>
-            <h3>Software Engineer</h3>
-            <p><strong>Harbinger Systems PVT LTD</strong></p>
-            <p><strong>Jun 2021 - Jul 2022</strong></p>
-            <ul>
-                <li>Refactored and designed end-to-end development of mobile/web applications, utilizing Java, AWS, Python, NodeJS, JavaScript, and SQL, achieving a 50% increase in client satisfaction through the timely delivery of high-quality solutions.</li>
-                <li>Integrated regional customization features into the application, enhancing functionality and user experience for specific geographic areas, resulting in a 25% increase in user satisfaction and engagement.</li>
-                <li>Demonstrated caching strategies and conducted comprehensive testing, reducing resource consumption by 25% and optimizing data retrieval with a 20% decrease in load times alongside Jenkins and Kubernetes for CI/CD.</li>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <a href="https://www.google.com" class="social-link" target="_blank" style="color: gold; text-decoration: none;">
+            Download
+            <ion-icon name="arrow-down-circle-outline" style="margin-left: 8px;"></ion-icon>
+        </a>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">George Mason University</h4>
+              <span>Aug 2022 — May 2024</span>
+              <p class="timeline-text">
+                Master of Science, Computer Science <br>
+                <strong>CGPA:</strong> 3.80/4.00 <br>
+                <strong>Key Courses:</strong> Secure Software Design, Data Mining, Information Security, Distributed
+                Systems, Database Systems, Operating Systems Concepts
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Savitribai Phule Pune University</h4>
+              <span>Jun 2017 — Jun 2021</span>
+              <p class="timeline-text">
+                Bachelor of Engineering, Computer Engineering <br>
+                <strong>CGPA:</strong> 3.80/4.00 <br>
+                <strong>Key Courses:</strong> Computer Architecture, Software Engineering and Design, Multithreaded
+                Programming, Object-Oriented Programming, NLP, ML
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Full Stack Java Developer</h4>
+              <span>Aug 2024 — Present</span>
+              <p class="timeline-text">
+                Pro-Tek IT <br>
+                • Working on SiriusXM's SPPG backend using Java Spring Boot, Hibernate, React, and REST APIs enabling
+                seamless data processing and integration with APIs, resulting in 30% faster playlist generation and
+                enhancing user experience. <br>
+                • Streamlined with algorithms for collaborative/content-based filtering, increasing user engagement by
+                25%, deployed using CI/CD pipelines utilizing Docker, AWS EC2, ELB ensuring smooth integration and
+                testing with JUnit and Mockito.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineer</h4>
+              <span>Jun 2021 — Jul 2022</span>
+              <p class="timeline-text">
+                Harbinger Systems PVT LTD <br>
+                • Refactored and designed end-to-end development of mobile/web applications, utilizing Java, AWS,
+                Python, NodeJS, JavaScript, and SQL, achieving a 50% increase in client satisfaction through the timely
+                delivery of high-quality solutions. <br>
+                • Integrated regional customization features into the application, enhancing functionality and user
+                experience for specific geographic areas, resulting in a 25% increase in user satisfaction and
+                engagement. <br>
+                • Demonstrated caching strategies and conducted comprehensive testing, reducing resource consumption by
+                25% and optimizing data retrieval with a 20% decrease in load times alongside Jenkins, Kubernetes for
+                CI/CD.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Developer</h4>
+              <span>Jun 2019 — Jul 2020</span>
+              <p class="timeline-text">
+                Seed Infotech LTD <br>
+                • Revamped a mobile/web application using Java, AWS ELB, JavaScript, React, JQuery, and MySQL, meeting
+                the demands of a university, and achieved seamless alumni registration with over 30,000 students. <br>
+                • Collaborated with the cross-functional design team to analyze data access patterns, resulting in
+                well-suited database schemas, contributing to a 25% decrease in database access latency and a 15%
+                increase in data retrieval efficiency.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+            <!-- Languages -->
+            <h1 class="h1">Languages</h1>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Java</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%;"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">C++</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%;"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">C</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%;"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">C#</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%;"></div>
+                </div>
+              </li>
+              <!-- Add more languages similarly -->
             </ul>
-        </div>
-    
-        <div>
-            <h3>Software Developer</h3>
-            <p><strong>Seed Infotech LTD</strong></p>
-            <p><strong>Jun 2019 - Jul 2020</strong></p>
-            <ul>
-                <li>Revamped a mobile/web application using Java, AWS ELB, JavaScript, React, JQuery, and MySQL, meeting the demands of a university and achieved seamless alumni registration with over 30,000 students.</li>
-                <li>Collaborated with the cross-functional design team to analyze data access patterns, resulting in well-suited database schemas, contributing to a 25% decrease in database access latency and a 15% increase in data retrieval efficiency.</li>
+
+            <!-- Frameworks & Libraries -->
+            <h1 class="h1">Frameworks & Libraries</h1>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Spring Boot</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%;"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%;"></div>
+                </div>
+              </li>
+              <!-- Add more frameworks and libraries similarly -->
             </ul>
-        </div>
-    </section>
-    <section id="academic-projects">
-        <h2>Academic Projects</h2>
-    
-        <div>
-            <h3>Travel lite - Software Engineering</h3>
-            <p><strong>Dec 2023</strong></p>
-            <ul>
-                <li>Deployed a web application facilitating REST API CRUD operations to solve a real-world problem of cab booking using MongoDB, Express, React.js, and Node.js (MERN).</li>
-                <li>Followed an agile scrum-based model with relevant stakeholders in the SDLC and conducted unit testing, resulting in a 25% reduction in booking errors.</li>
+
+            <!-- Databases & Operating Systems -->
+            <h1 class="h1">Databases & Operating Systems</h1>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">MySQL</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%;"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">MongoDB</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%;"></div>
+                </div>
+              </li>
+              <!-- Add more databases and operating systems similarly -->
             </ul>
-        </div>
-    
-        <div>
-            <h3>Detecting Signs of Depression from Social Media Text - Natural Language Processing</h3>
-            <p><strong>Jul 2023</strong></p>
-            <ul>
-                <li>Effectuated a Multilingual BERT system for depression detection in 4 languages: English, Hindi, Dutch, and German.</li>
-                <li>Enhanced sentiment analysis, reduced false positives and negatives by 40%, and provided empathetic support.</li>
-                <li>Classified depressive posts with over 90% accuracy, contributing to global mental health by analyzing 1 million daily social media posts for early depression detection and support.</li>
+
+            <!-- Tools & Other Skills -->
+            <h1 class="h1">Tools & Other Skills</h1>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Git</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%;"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Docker</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%;"></div>
+                </div>
+              </li>
+
             </ul>
-        </div>
-    
-        <div>
-            <h3>Frequent Pattern Mining - Data Mining</h3>
-            <p><strong>Nov 2022</strong></p>
-            <ul>
-                <li>Performed market basket data analysis and mined interesting buying patterns after data processing in a transaction dataset of 10,000 customers using association rule mining, Apriori, and Frequent Pattern (FP) tree algorithms in Python.</li>
-                <li>Implemented parallel processing techniques to enhance efficiency and scalability, resulting in a 50% reduction in computation time compared to sequential processing methods.</li>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
             </ul>
-        </div>
-    
-        <div>
-            <h3>Distributed Data Vending Crowdsourcing Based on Blockchain Framework – Algorithm Design</h3>
-            <p><strong>Feb 2021</strong></p>
-            <ul>
-                <li>Devised a novel approach to addressing security issues with data sharing, reducing the dangers of personally identifiable information by 90%, and published a review at Springers (https://doi.org/10.1007/978-981-16-7985-8_54).</li>
-                <li>Implemented cutting-edge RCC Encryption algorithm, ensuring ~95% secure access control mechanism for the Data Vending platform.</li>
-                <li>Achieved a reduction in mistrust between Data Vendors and Data Aggregators by utilizing a Distributed Blockchain framework and security algorithms by ~95%.</li>
-            </ul>
-        </div>
-    </section>    
-    <footer></footer>
-    <script src="script.js"></script>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/STEPHENDIAS10/Weather_web">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Weather Web</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/STEPHENDIAS10/registration-login-spring-boot-security-thymeleaf-hibernate">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Spring Boot Security BlackJack</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/STEPHENDIAS10/4s-navigation-tool">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">VS Code 4S Navigation Tool</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/STEPHENDIAS10/cs584-Project">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">CS 584 Data mining : Crimes occur maping and Solution</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/STEPHENDIAS10/CS678_NLP_Project">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Detecting signs of depression from social media text Multi lang Model NLP </h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/STEPHENDIAS10/Chat_application">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Chat Web Application</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
